@@ -1,0 +1,224 @@
+/**
+ * @author: Pablo Pérez Martínez
+ * 13/11/2019
+ */
+
+/**
+ * Fonts
+ */
+@font-face { font-family: ProximaNova; src: url('../fonts/ProximaNova.otf'); }
+@font-face { font-family: ProximaNova; font-weight: bold; src: url('../fonts/ProximaNovaBold.otf') }
+@font-face { font-family: ProximaNova; font-weight: bolder; src: url('../fonts/ProximaNovaExtraBold.otf') }
+@font-face { font-family: ProximaNova; font-weight: lighter;; src: url('../fonts/ProximaNovaThin.otf'); }
+
+body {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 20px;
+  background-image: url('../images/right_corner_bg.svg'), url('../images/left_corner_bg.svg');
+  background-position: 1002px -230px, -223px 180%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 500px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+  color: #002D44;
+  line-height: 15px;
+  margin-top: 40px;
+}
+
+p {
+  text-align: center;
+  color: #002D44;
+  font-weight: normal;
+}
+
+.header-container {
+  padding: 20px 5px 20px 5px;
+}
+
+.top-bar {
+  padding-left: 10px;
+}
+  .top-bar img {
+    width: 36px;
+  }
+
+.right-bar {
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+  .right-bar img {
+    width: 36px;
+    height: auto;
+  }
+
+.secret-message {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  display: flex;
+
+  float: left;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.attached-emoji {
+  margin-right: 5px
+}
+  .attached-emoji img {
+    height: 24px;
+    width: auto;
+  }
+
+.centered-container {
+  padding: 0px 5px 0px 5px;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circles {
+  width: 212px;
+  margin: 20px;
+}
+  .circles .circle {
+    float: left;
+    border: 2pt solid #DDDDDD;
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    margin: 6px;
+  }
+
+.button-container {
+  width: 288px;
+}
+  .button-container .button {
+    float: left;
+    width: 63px;
+    height: 63px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 8px;
+    padding: 8px;
+  }
+  .button-container .button:hover {
+    background-color: #D4ECF2 !important;
+    border: 2px solid #A7E8EF;
+    margin: 6px;
+    padding: 8px;
+  }
+  .button-container img {
+    width: 37px;
+    height: 37px;
+    padding: 12px;
+  }
+
+.rectangular-button {
+  float: left;
+  width: 86px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 3px 6px #00000029;
+  margin: 6px;
+  padding: 8px;
+}
+  .rectangular-button img {
+    width: 37px;
+    height: 37px;
+    padding: 7px 25px;
+  }
+
+.teal-background {
+  background-color: #01BACC !important;
+}
+
+@media screen and (max-width:1024px) {
+  body {
+    background-position: 800px -180px, -173px 138%;
+    background-size: 400px;
+  }
+  h1 {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width:920px) {
+  body {
+    background-position: 585px -185px, -173px 900px;
+    background-size: 400px;
+  }
+  h1 {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  body {
+    background-position: 525px -165px, -173px 900px;
+    background-size: 400px;
+  }
+  h1 {
+    margin-top: 220px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  body {
+    background-position: 545px -165px, -173px 700px;
+    background-size: 400px;
+  }
+  h1 {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  body {
+    background-position: 235px -135px, -173px 133%;
+    background-size: 300px;
+  }
+  h1 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  body {
+    background-position: 215px -135px, -173px 131%;
+    background-size: 300px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  body {
+    background-position: 175px -155px, -152px 103%;
+    background-size: 300px;
+  }
+  h1 {
+    margin-top: 20px;
+    font-size: 38px
+  }
+}
+
+@media screen and (max-width:320px) {
+  body {
+    background-position: 130px -170px, -152px 133%;
+    background-size: 300px;
+    font-size: 12px;
+  }
+  h1 {
+    margin-top: 20px;
+    font-size: 32px
+  }
+}
